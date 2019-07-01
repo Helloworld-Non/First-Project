@@ -16,27 +16,29 @@ project 1 - A Random Quote Generator
 ***/
 
 var quotes = [{
-  introduction : "Hi,my name is Non and I'm from Thailand"
-  source : "Facebook "
-  citation : "Non Karakarn"
+  quote : "Hi,my name is Non and I'm from Thailand",
+  source : "Facebook ",
+  citation : "Non Karakarn",
   year : "1996"
 },
 {
-  introduction : "Don't cry because it's over, smile because it happened"
+  quote : "Don't cry because it's over, smile because it happened",
   source : "Twitter"
 },{
-  introduction : "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best."
-  source : "Facebook"
+  quote : "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
+  source : "Facebook",
   citation : "Oscar Wilde"
 },{
-  introduction : "Be yourself; everyone else is already taken"
+  quote : "Be yourself; everyone else is already taken",
   source : "Facebook"
 },{
-  introduction : "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
-  source : "IG"
+  quote : "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+  source : "IG",
   year : "2019"
 }]
 
+//test//
+console.log(quotes);
 
 
 
@@ -49,8 +51,14 @@ var quotes = [{
 ***/
 
 function getRandomQuote(){
-  var arrayNumber = math.random()*6
-}
+  var arrayNumber = Math.floor(Math.random()*5)
+  var resultQuote = quotes[arrayNumber]
+  return resultQuote
+
+};
+
+var randomQuote = getRandomQuote()
+console.log(randomQuote.quote);
 
 
 
